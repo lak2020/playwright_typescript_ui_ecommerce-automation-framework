@@ -22,72 +22,6 @@ Demonstrates best practices for E2E testing including **Page Object Model**, **f
 | 🌐 App Under Test | [AutomationExercise.com](https://automationexercise.com) |
 
 ---
-
-## 📑 Table of Contents
-
-- [Quick Links](#-quick-links)
-- [Tech Stack](#-tech-stack)
-- [Test Coverage](#-test-coverage)
-- [Architecture & Design Patterns](#️-architecture--design-patterns)
-- [Getting Started](#-getting-started)
-- [Running Tests](#-running-tests)
-- [Reporting](#-reporting)
-- [CI/CD Pipeline](#-cicd-pipeline)
-- [Industrial Standards Applied](#-industrial-standards-applied)
-- [Contributing](#-contributing)
-- [License](#-license)
-
----
-
-## 🛠️ Tech Stack
-
-| Technology | Purpose |
-|------------|---------|
-| [Playwright](https://playwright.dev/) | Browser automation & testing |
-| [TypeScript](https://www.typescriptlang.org/) | Type-safe test development |
-| [Faker.js](https://fakerjs.dev/) | Dynamic test data generation |
-| [Allure](https://allurereport.org/) | Advanced test reporting |
-| [ESLint](https://eslint.org/) | Code quality & linting |
-| [GitHub Actions](https://github.com/features/actions) | CI/CD pipeline |
-| [dotenv](https://github.com/motdotla/dotenv) | Environment configuration |
-
----
-
-## 📋 Test Coverage
-
-**26 test cases** across 7 functional modules covering the full e-commerce user journey:
-
-| # | Test Case | Module | Tags |
-|---|-----------|--------|------|
-| TC01 | Register User | Auth | `@auth` `@smoke` |
-| TC02 | Login with correct credentials | Auth | `@auth` `@smoke` |
-| TC03 | Login with incorrect credentials | Auth | `@auth` `@smoke` |
-| TC04 | Logout User | Auth | `@auth` |
-| TC05 | Register with existing email | Auth | `@auth` |
-| TC06 | Contact Us Form | Contact | `@regression` |
-| TC07 | Verify Test Cases Page | Products | `@products` |
-| TC08 | Verify All Products & Detail Page | Products | `@products` `@smoke` |
-| TC09 | Search Product | Products | `@products` `@smoke` |
-| TC10 | Subscription on Home Page | Subscription | `@smoke` |
-| TC11 | Subscription on Cart Page | Subscription | `@regression` |
-| TC12 | Add Products to Cart | Cart | `@cart` `@smoke` |
-| TC13 | Verify Product Quantity in Cart | Cart | `@cart` |
-| TC14 | Place Order: Register while Checkout | Checkout | `@checkout` `@smoke` |
-| TC15 | Place Order: Register before Checkout | Checkout | `@checkout` |
-| TC16 | Place Order: Login before Checkout | Checkout | `@checkout` |
-| TC17 | Remove Products from Cart | Cart | `@cart` |
-| TC18 | View Category Products | Products | `@products` |
-| TC19 | View & Cart Brand Products | Products | `@products` |
-| TC20 | Search Products & Verify Cart After Login | Products | `@products` |
-| TC21 | Add Review on Product | Products | `@products` |
-| TC22 | Add to Cart from Recommended Items | Cart | `@cart` |
-| TC23 | Verify Address Details in Checkout | Checkout | `@checkout` |
-| TC24 | Download Invoice after Purchase | Checkout | `@checkout` |
-| TC25 | Scroll Up using Arrow Button | UI | `@ui` |
-| TC26 | Scroll Up without Arrow Button | UI | `@ui` |
-
----
-
 ## 🏗️ Architecture & Design Patterns
 
 ```
@@ -152,6 +86,71 @@ playwright_typescript_ui_ecommerce-automation-framework/
 | **Barrel Exports** | Centralized `index.ts` for clean page object imports |
 | **Data-driven Testing** | Static + dynamic test data separated from test logic |
 | **Environment Config** | `dotenv` for environment-specific configuration |
+---
+
+## 📑 Table of Contents
+
+- [Quick Links](#-quick-links)
+- [Architecture & Design Patterns](#️-architecture--design-patterns)
+- [Tech Stack](#-tech-stack)
+- [Test Coverage](#-test-coverage)
+- [Getting Started](#-getting-started)
+- [Running Tests](#-running-tests)
+- [Reporting](#-reporting)
+- [CI/CD Pipeline](#-cicd-pipeline)
+- [Industrial Standards Applied](#-industrial-standards-applied)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| [Playwright](https://playwright.dev/) | Browser automation & testing |
+| [TypeScript](https://www.typescriptlang.org/) | Type-safe test development |
+| [Faker.js](https://fakerjs.dev/) | Dynamic test data generation |
+| [Allure](https://allurereport.org/) | Advanced test reporting |
+| [ESLint](https://eslint.org/) | Code quality & linting |
+| [GitHub Actions](https://github.com/features/actions) | CI/CD pipeline |
+| [dotenv](https://github.com/motdotla/dotenv) | Environment configuration |
+
+---
+
+## 📋 Test Coverage
+
+**26 test cases** across 7 functional modules covering the full e-commerce user journey:
+
+| # | Test Case | Module | Tags |
+|---|-----------|--------|------|
+| TC01 | Register User | Auth | `@auth` `@smoke` |
+| TC02 | Login with correct credentials | Auth | `@auth` `@smoke` |
+| TC03 | Login with incorrect credentials | Auth | `@auth` `@smoke` |
+| TC04 | Logout User | Auth | `@auth` |
+| TC05 | Register with existing email | Auth | `@auth` |
+| TC06 | Contact Us Form | Contact | `@regression` |
+| TC07 | Verify Test Cases Page | Products | `@products` |
+| TC08 | Verify All Products & Detail Page | Products | `@products` `@smoke` |
+| TC09 | Search Product | Products | `@products` `@smoke` |
+| TC10 | Subscription on Home Page | Subscription | `@smoke` |
+| TC11 | Subscription on Cart Page | Subscription | `@regression` |
+| TC12 | Add Products to Cart | Cart | `@cart` `@smoke` |
+| TC13 | Verify Product Quantity in Cart | Cart | `@cart` |
+| TC14 | Place Order: Register while Checkout | Checkout | `@checkout` `@smoke` |
+| TC15 | Place Order: Register before Checkout | Checkout | `@checkout` |
+| TC16 | Place Order: Login before Checkout | Checkout | `@checkout` |
+| TC17 | Remove Products from Cart | Cart | `@cart` |
+| TC18 | View Category Products | Products | `@products` |
+| TC19 | View & Cart Brand Products | Products | `@products` |
+| TC20 | Search Products & Verify Cart After Login | Products | `@products` |
+| TC21 | Add Review on Product | Products | `@products` |
+| TC22 | Add to Cart from Recommended Items | Cart | `@cart` |
+| TC23 | Verify Address Details in Checkout | Checkout | `@checkout` |
+| TC24 | Download Invoice after Purchase | Checkout | `@checkout` |
+| TC25 | Scroll Up using Arrow Button | UI | `@ui` |
+| TC26 | Scroll Up without Arrow Button | UI | `@ui` |
+
 
 ---
 
