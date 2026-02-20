@@ -100,7 +100,6 @@ playwright_typescript_ui_ecommerce-automation-framework/
 - [CI/CD Pipeline](#-cicd-pipeline)
 - [Industrial Standards Applied](#-industrial-standards-applied)
 - [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
