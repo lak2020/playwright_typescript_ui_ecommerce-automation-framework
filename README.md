@@ -17,7 +17,7 @@ Demonstrates best practices for E2E testing including **Page Object Model**, **f
 | Resource | Link |
 |----------|------|
 | 📁 GitHub Repository | [lak2020/playwright_typescript_ui_ecommerce-automation-framework](https://github.com/lak2020/playwright_typescript_ui_ecommerce-automation-framework) |
-| 📊 Report (GitHub Pages) | [Live Report](https://lak2020.github.io/playwright_typescript_ui_ecommerce-automation-framework/) |
+| 📊 Playwright HTML Report | [View Report](https://lak2020.github.io/playwright_typescript_ui_ecommerce-automation-framework/) |
 | ⚙️ CI/CD Pipeline | [GitHub Actions](https://github.com/lak2020/playwright_typescript_ui_ecommerce-automation-framework/actions) |
 | 🌐 App Under Test | [AutomationExercise.com](https://automationexercise.com) |
 
